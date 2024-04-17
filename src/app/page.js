@@ -15,7 +15,7 @@ export default function Home() {
       <div className='flex flex-row max-w-5xl m-auto'>
         <SideNav />
         <div className='mx-5 '>
-          <div className='min-h-screen flex text-light' id='intro'>
+          <section className='min-h-screen flex text-light snap-start snap-always' id='intro'>
             <div className='self-center'>
               <p className='text-3xl mb-3'>Hello, I&lsquo;m</p>
               <p className='text-5xl text-primary font-semibold'>Allen Poblete</p>
@@ -23,20 +23,21 @@ export default function Home() {
               <p className='text-sm max-w-xl mt-4 text-light/80'>Experienced backend developer specializing in RESTful APIs, Javascript(Node.js), MySQL and Docker. Passionate about crafting efficient and scalable solutions. Let&lsquo;s turn your ideas into reality!</p>
               <div className='text-primary font-semibold mt-9'>
                 <button className=' p-3 rounded-lg outline outline-2 hover:outline-none hover:bg-primary hover:text-light'><a href="mailto:pobleteallen@gmail.com">Contact Me</a></button>
-                <button className=' p-3 rounded-lg outline outline-2 ml-3 hover:outline-none hover:bg-primary hover:text-light'><a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/static/docs/resume.pdf`} download='allen_poblete_resume'>Resume</a></button>
+                <button className=' p-3 rounded-lg outline outline-2 ml-3 hover:outline-none hover:bg-primary hover:text-light'><a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/static/docs/resume.pdf`} target="_blank">Resume</a></button>
 
               </div>
 
             </div>
-          </div>
-          <div className='w-full flex scroll-mt-5 text-light' id='about'>
+          </section>
+          <section className='w-full min-h-screen flex text-light snap-start snap-always' id='about'>
             <div className='self-center'>
               <h1 className='text-primary text-3xl font-semibold'>About Me</h1>
-              <p className='text-lg mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis convallis quam nec mattis. Vivamus varius nisl sapien, non eleifend ex venenatis vitae. In tortor diam, tincidunt at velit id, vestibulum fermentum ipsum. Nunc viverra magna sit amet ante convallis fringilla. Vestibulum sapien velit, volutpat hendrerit euismod eget, tincidunt vitae libero. Etiam fringilla, neque sit amet commodo feugiat, nibh nibh dignissim dui, hendrerit bibendum risus neque non ligula. Cras vitae dignissim mi. Phasellus elementum odio dui, quis aliquet sem scelerisque sed. Sed nec luctus neque.</p>
+              <p className='text-lg mt-5'>I first learned how to code while playing a game called &lsquo;Ragnarok Online&lsquo; where bots and cheats were common occurrences. I attempted to write or at least set up one of those cheats to make my gaming life easier. That was the first time I enjoyed coding to the point where I needed to stay up all night just to make the tool work.</p>
+              <p className='text-lg mt-5'>These days, my main focus is system design and learning new languages or frameworks whenever I have free time. I enjoy building tools, helpers, backend development, and mini-services that I can use in my programming career.</p>
             </div>
             
-          </div>
-          <div className='w-full flex scroll-mt-5 text-light mt-24' id="skills">
+          </section>
+          <section className='w-full flex text-light mt-24 snap-start snap-always min-h-screen' id="skills">
             <div className='self-center'>
 
               <h1 className='text-primary text-3xl font-semibold'>Skill Set</h1>
@@ -55,8 +56,8 @@ export default function Home() {
                 <SkillCard className='mr-3 mb-3' description='Git' icon='git.svg'/>
               </div>
             </div>
-          </div>
-          <div className='w-full flex scroll-mt-5 text-light mt-24' id="experience">
+          </section>
+          <section className='w-full flex text-light mt-24 snap-start snap-always min-h-screen' id="experience">
             <div className='self-center'>
 
               <h1 className='text-primary text-3xl font-semibold'>Experience</h1>
@@ -65,18 +66,18 @@ export default function Home() {
                 <Experience className='mt-5' range='2017 - 2018' title='Web Programmer • WAMD Web and Mobile Development Services' description='Build and maintain website, back-end and web services Collaborate with designers and app developers to implement best practices and seamless user experiences.' skills={['PHP', 'HTML', 'JQuery', 'CSS', 'Javascript', 'MySQL']}/>
               </div>
             </div>
-          </div>
-          <div className='w-full flex scroll-mt-5 text-light mt-24' id="projects">
+          </section>
+          <section className='w-full flex text-light mt-24 snap-start snap-always min-h-screen' id="projects">
             <div className='self-center'>
 
               <h1 className='text-primary text-3xl font-semibold'>Projects</h1>
               <div className='mt-5 flex flex-row flex-wrap'>
-                <Project image={<Image className='w-full self-start max-lg:self-center rounded drop-shadow text-light' src={`${process.env.NEXT_PUBLIC_BASE_PATH}/static/images/etaren.png`} alt='project' width={1980} height={1024}/>} title='AI Image Generator' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis convallis quam nec mattis. Vivamus varius nisl sapien, non eleifend ex venenatis vitae. In tortor diam, tincidunt at velit id, vestibulum fermentum ipsum. Nunc viverra magna sit amet ante convallis fringilla. Vestibulum sapien velit, volutpat hendrerit euismod eget, tincidunt vitae libero.' skills={['ReactJS', 'Javascript', 'HTML', 'CSS', 'SCSS', 'PostgreSQL', 'NodeJS', 'ExpressJS', 'Stripe API', 'Cloudflare']}/>
-                <Project className='mt-5' image={<Image className='w-auto self-start max-lg:self-center rounded drop-shadow text-light' src={`${process.env.NEXT_PUBLIC_BASE_PATH}/static/images/minting.png`} alt='project' width={1980} height={1024}/>} title='Solana NFT Minting Site' description='Build and maintain website, back-end and web services. Collaborate with designers and app developers to implement best practices and seamless user experiences. ' skills={['NextJS', 'Javascript', 'HTML', 'ChakraUI', 'Vercel', 'CSS', 'Web3']}/>
+                <Project image={<Image className='w-full self-start max-lg:self-center rounded drop-shadow text-light' src={`${process.env.NEXT_PUBLIC_BASE_PATH}/static/images/etaren.png`} alt='project' width={1980} height={1024}/>} title='AI Image Generator' link="https://etaren.xyz" description='Web app for generating AI images including different styles and models. This app is built in ReactJS and ExpressJS. App includes free generation of text to image and paid generation of image including image to image, controlnet, inpainting and faceswap.' skills={['ReactJS', 'Javascript', 'HTML', 'CSS', 'SCSS', 'PostgreSQL', 'NodeJS', 'ExpressJS', 'Stripe API', 'Cloudflare']}/>
+                <Project className='mt-5' image={<Image className='w-auto self-start max-lg:self-center rounded drop-shadow text-light' src={`${process.env.NEXT_PUBLIC_BASE_PATH}/static/images/minting.png`} alt='project' width={1980} height={1024}/>} title='Solana NFT Minting Site' link="https://sample-minting.vercel.app" description='NFT minting site built in NextJS. This site showcasing the different groups for minting NFT like Whitelisted, OG and Public minters which most of the time has different set of rules for minting NFTs. ' skills={['NextJS', 'Javascript', 'HTML', 'ChakraUI', 'Vercel', 'CSS', 'Web3']}/>
               </div>
             </div>
-          </div>
-          <div className='w-full text-light text-center mt-10 mb-5 flex flex-row max-sm:flex-col justify-center max-lg:justify-between'>
+          </section>
+          <section className='w-full text-light text-center mt-10 mb-5 flex flex-row max-sm:flex-col justify-center max-lg:justify-between snap-start snap-always'>
             <p className='text-xs self-center'>Designed and coded by <span className='text-primary'>Allen Poblete</span> • 2024</p>
             <div className='hidden max-lg:flex flex-row justify-start max-sm:self-center max-sm:mt-3'>
               <a href="https://m.me/allen.poblete.1" target='_blank'>
@@ -107,7 +108,7 @@ export default function Home() {
                 />
               </a>
             </div>
-          </div>
+          </section>
         </div>
         
       </div>

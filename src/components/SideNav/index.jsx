@@ -25,8 +25,8 @@ export default function SideNav() {
 
 
     const observer = new IntersectionObserver(entries => {
-  
       entries.forEach(entry => {
+          
           if(entry.isIntersecting){
               if (entry.target.id === 'intro'){
                 setActiveSection('intro')
