@@ -11,10 +11,10 @@ export default function Project({image, title, description, className, skills, l
           <a href={link} className='text-light group' target="_blank">
             <p className='font-semibold'>{title}
               
-                <FontAwesomeIcon
+                {link && <FontAwesomeIcon
                   className='text-sm ml-1 group-hover:text-primary'
                   icon={faGlobe}
-                />
+                />}
               
             </p>
           </a>
