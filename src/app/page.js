@@ -34,6 +34,7 @@ export default function Home() {
               <h1 className='text-primary text-3xl font-semibold'>About Me</h1>
               <p className='text-lg mt-5'>I first learned how to code while playing a game called &lsquo;Ragnarok Online&lsquo; where bots and cheats were common occurrences. I attempted to write or at least set up one of those cheats to make my gaming life easier. That was the first time I enjoyed coding to the point where I needed to stay up all night just to make the tool work.</p>
               <p className='text-lg mt-5'>These days, my main focus is system design and learning new languages or frameworks whenever I have free time. I enjoy building tools, helpers, backend development, and mini-services that I can use in my programming career.</p>
+              <p className='text-lg mt-5'>If you&lsquo;re looking for a back-end developer to bring your projects to life, let&lsquo;s connect. I&lsquo;m ready to collaborate and build something remarkable together.</p>
             </div>
             
           </section>
