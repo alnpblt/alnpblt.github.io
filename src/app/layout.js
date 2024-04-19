@@ -7,6 +7,7 @@ config.autoAddCss=false;
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL),
   title: "Allen Poblete Portfolio",
   openGraph: {
     title: "Allen Poblete Portfolio",
