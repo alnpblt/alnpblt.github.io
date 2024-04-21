@@ -20,7 +20,7 @@ export default function Home() {
               <p className='text-3xl mb-3'>Hello, I&lsquo;m</p>
               <p className='text-5xl text-primary font-semibold'>Allen Poblete</p>
               <p className='text-3xl mt-3'>Back end Developer</p>
-              <p className='text-sm max-w-xl mt-4 text-light/80'>Experienced backend developer specializing in RESTful APIs, Javascript(Node.js), PHP, MySQL and Docker. Passionate about crafting efficient and scalable solutions. Let&lsquo;s turn your ideas into reality!</p>
+              <p className='text-sm max-w-xl mt-4 text-light/80'>Experienced backend developer focused on building RESTful APIs. Passionate about crafting efficient and scalable solutions. Let&lsquo;s turn your ideas into reality!</p>
               <div className='text-primary font-semibold mt-9'>
                 <button className=' p-3 rounded-lg outline outline-2 hover:outline-none hover:bg-primary hover:text-light'><a href="mailto:pobleteallen@gmail.com">Contact Me</a></button>
                 <button className=' p-3 rounded-lg outline outline-2 ml-3 hover:outline-none hover:bg-primary hover:text-light'><a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/static/docs/resume.pdf`} target="_blank">Resume</a></button>
